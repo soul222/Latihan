@@ -1,0 +1,88 @@
+*, html,body{
+    margin: 0;
+    padding: 0;
+    font-family: "Silkscreen", cursive;
+}
+:root{
+    --bg-primary:blue;
+    --bg-secondary:red;
+    --bg-light:beige;
+    --bg-dark:black;
+}
+.container{
+width: 100%;
+height: 100vh;
+background-color:var(--bg-primary);
+}
+
+.container .wrapper{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    color: var(--bg-dark);
+    
+}
+
+.card{
+    width: 200px;
+    margin: 20px;
+    padding: 20px;
+    background-color: var(--bg-light);
+    border: 2px solid var(--bg-dark);
+}
+
+.text-center{
+    text-align: center;
+}
+
+i{
+    font-size: 30px;
+    color: var(--bg-primary);
+}
+
+.btn{
+    width: 150px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: var(--bg-primary);
+    color: var(--bg-light);
+    transform: translateY(10px);
+    transition: 2s;
+    -webkit-transition:2.s ;
+    -moz-transition:2.s ;
+    -ms-transition:2.s ;
+    -o-transition:2.s ;
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    -o-transform: translateY(10px);
+}
+
+@media screen and (max-width:842px) {
+    .container{
+        height: max-content;
+    }
+    .wrapper{
+        flex-wrap: wrap;
+    }
+    .card{
+        width: 100vw;
+    }
+}
+@media screen and (width:884px) {
+    .container{
+        height: 100vh;
+    }
+    .wrapper{
+        flex-wrap: wrap;
+    }
+    .card{
+        width: 200px;
+    }
+}
+
